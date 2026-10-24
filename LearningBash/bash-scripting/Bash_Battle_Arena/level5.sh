@@ -34,3 +34,6 @@ else
 fi
 
 ls LearningBash/battlefield && ls LearningBash/Archive
+
+
+#when identify the index of an array, the variable name with the pointer [N] need to appear in squirlly braces. 
