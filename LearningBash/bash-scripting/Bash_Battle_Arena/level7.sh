@@ -8,7 +8,8 @@
 if [ ! -z "$1" ];then
     if [ -d "$1" ];then
         echo "directory $1 found" 
-        ls -s "$1"
+        echo "Files sorted by size:"
+        find $1 -type f -exec ls -lh {} + | sort -k 5,5 -h
     else
         echo "directory $1 not found"
     fi
